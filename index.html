@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adewale Plumbing Works</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!--The header begins here-->
+    <div class="header">
+      <div class="header-logo">
+        <img src="images/adewale-logo.png" alt="Our logo" />
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <br />
+    </div>
+    <!--The header ends here-->
+
+    <div class="wrapper">
+      <div class="form-box">
+        <form onsubmit="return validateForm ()">
+          <div class="form-div">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" placeholder="Enter Your Name" required />
+          </div>
+          <div class="form-div">
+            <i class="fa fa-envelope" aria-hidden="true"></i
+            ><input type="email" placeholder="Enter Your Email" required />
+          </div>
+          <div class="form-div">
+            <i class="fa fa-key" aria-hidden="true"></i
+            ><input
+              type="password"
+              placeholder="Enter Your Password"
+              required
+            />
+          </div>
+          <div class="form-div">
+            <i class="fa fa-phone"></i
+            ><input type="number" placeholder="Enter Your Phone" required />
+          </div>
+          <textarea rows="6" cols="30" placeholder="Enter Message"></textarea>
+          <input type="submit" onclick="myfunction()" value="Submit" />
+        </form>
+      </div>
+      <div class="wrapper-text">
+        <h2>Adewale Plumbing Works</h2>
+        <p>
+          We deals with all kind of Plumbing works which include installation of
+          borehole, running of pipes both conduit and surface runnings, repairs,
+          throughing of blockage and lot more that aligns with other plumbing
+          works
+        </p>
+      </div>
+    </div>
+  </body>
+  <script>
+    function myfunction() {
+      alert("The form was submitted");
+    }
+  </script>
+</html>
